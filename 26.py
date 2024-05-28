@@ -10,9 +10,19 @@ class Solution:
             count += 1
 
         return count
+        
+        # Second approach to resolve 
+        # slow, fast = 0, 1
+        # while fast in range(len(nums)):
+        #     if nums[slow] == nums[fast]:
+        #         fast += 1
+        #     else:
+        #         nums[slow+1] = nums[fast]
+        #         fast += 1
+        #         slow += 1
 
-
-
+        # print(nums)
+        # return slow + 1        
 
 nums = [0,0,1,1,1,2,2,3,3,4]
 print(Solution.removeDuplicates(nums = [0,0,1,1,1,2,2,3,3,4])) #5, nums = [0,1,2,3,4,_,_,_,_,_]   
