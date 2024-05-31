@@ -11,8 +11,5 @@ class Solution:
 
         return profit
                 
-            
-
-
 s = Solution()
 print(s.maxProfit(prices = [1,2]))
